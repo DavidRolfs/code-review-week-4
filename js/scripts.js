@@ -11,7 +11,7 @@ Pizza.prototype.fullOrder= function() {
 
 }
 
-function pizzaCost(toppingTotal, sizeTotal){
+function pizzaCost(toppingTotal, sizeTotal, drinkTotal){
   var toppingCost = toppingTotal.length * 1.99;
   if(sizeTotal === "Small"){
     var sizeCost = 9.99;
@@ -25,7 +25,7 @@ function pizzaCost(toppingTotal, sizeTotal){
   else if(sizeTotal === "Extra Large"){
     var sizeCost = 19.99;
   }
-  return (toppingCost + sizeCost).toFixed(2);
+  return (toppingCost + sizeCost + drinkTotal).toFixed(2);
 };
 
 // front end
@@ -37,10 +37,12 @@ $(document).ready(function(){
     $("input:checkbox[name=topping]:checked").each(function() {
       var topping = $(this).val();
       toppings.push(topping);
-    })
-  var finalTotal = pizzaCost(toppings, pizzaSize)
+    });
+    
+  var drink = parseInt($("#drink").val());
+  var finalTotal = pizzaCost(toppings, pizzaSize, drink)
 
-  var pizza = new Pizza(pizzaSize, toppings, finalTotal);
+  var pizza = new Pizza(pizzaSize, toppings, finalTotal, drink);
 
   $("#receipt").append(pizza.fullOrder())
 

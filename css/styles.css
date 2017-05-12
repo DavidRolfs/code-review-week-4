@@ -1,9 +1,17 @@
 body{
   background-color: yellow;
 }
+
+.container{
+  background-image: url("/Users/davidrolfs/desktop/code-review-week-4/img/krusty-krab.jpeg");
+   background-repeat: no-repeat;
+  color: #0a5cf5;
+  background-size: 100%;
+}
+
 #receipt{
   float: right;
 }
 form {
-    display: inline-block; 
-    }
+  display: inline-block;
+}
