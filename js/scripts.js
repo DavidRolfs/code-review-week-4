@@ -38,7 +38,7 @@ $(document).ready(function(){
       var topping = $(this).val();
       toppings.push(topping);
     });
-    
+
   var drink = parseInt($("#drink").val());
   var finalTotal = pizzaCost(toppings, pizzaSize, drink)
 

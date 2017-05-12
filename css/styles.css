@@ -14,8 +14,14 @@ img{
 }
 
 #receipt{
-  float: right;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
 }
 form {
   display: inline-block;
+}
+
+h2{
+  text-align: center;
 }
