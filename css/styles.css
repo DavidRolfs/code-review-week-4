@@ -1,5 +1,12 @@
+@font-face {
+  font-family: krustyKrab;
+  src: url('/Users/davidrolfs/desktop/code-review-week-4/krabby_patty/Krabby Patty.ttf');
+  font-weight:400;
+}
+
 body{
   background-color: yellow;
+  font-family: krustyKrab;
 }
 
 .container{
@@ -24,4 +31,5 @@ form {
 
 h2{
   text-align: center;
+
 }
