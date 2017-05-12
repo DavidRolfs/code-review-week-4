@@ -7,13 +7,15 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
+    <div id="background">
     <div class="container">
       <img src="img/pizza.jpeg">
       <br>
       <audio controls>
-        <source src="/Users/davidrolfs/desktop/code-review-week-4/The Krusty Krab Pizza Song.mp3" type="audio/mpeg">
+        <source src="The Krusty Krab Pizza Song.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
       </audio>
+      <div id="showing">
       <h2> Customize your own Pizza</h2>
       <h3>Select a size</h3>
         <ul>
@@ -30,7 +32,6 @@
           <option value="19.99">Extra Large</option>
         </select>
       </form>
-        <div id="receipt"> </div>
       <br>
       <h3>Select your toppings</h3>
       <p> $1.99 each </p>
@@ -83,7 +84,10 @@
       <button type="button" class="btn btn-primary">Submit Order</button>
       <br>
       <br>
+    </div>
+      <div id="receipt"> </div>
 
     </div>
+  </div>
   </body>
 </html>

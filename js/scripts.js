@@ -43,6 +43,7 @@ $(document).ready(function(){
   var finalTotal = pizzaCost(toppings, pizzaSize, drink)
 
   var pizza = new Pizza(pizzaSize, toppings, finalTotal, drink);
+  $("#showing").hide();
 
   $("#receipt").append(pizza.fullOrder())
 

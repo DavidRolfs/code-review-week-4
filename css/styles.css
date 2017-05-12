@@ -1,6 +1,6 @@
 @font-face {
   font-family: krustyKrab;
-  src: url('/Users/davidrolfs/desktop/code-review-week-4/krabby_patty/Krabby Patty.ttf');
+  src: url('../krabby_patty/Krabby Patty.ttf');
   font-weight:400;
 }
 audio{
@@ -16,8 +16,11 @@ body{
   background-image: url("../img/krusty-krab.jpeg");
   background-repeat: no-repeat;
   color: black;
-  background-size: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
+
 img{
   width: 25%;
   margin-left: 450px;
