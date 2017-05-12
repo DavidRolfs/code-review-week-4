@@ -3,10 +3,14 @@ body{
 }
 
 .container{
-  background-image: url("/Users/davidrolfs/desktop/code-review-week-4/img/krusty-krab.jpeg");
-   background-repeat: no-repeat;
-  color: #0a5cf5;
+  background-image: url("../img/krusty-krab.jpeg");
+  background-repeat: no-repeat;
+  color: black;
   background-size: 100%;
+}
+img{
+  width: 25%;
+  margin-left: 450px;
 }
 
 #receipt{
