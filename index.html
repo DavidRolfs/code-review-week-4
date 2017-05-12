@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title> Pizza </title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1> Welcome to the Krusty Krab Pizza</h1>
+      <h2> Customize your own Pizza</h2>
+      <h3>Select a size</h3>
+        <ul>
+          <li>Small $9.99</li>
+          <li>Medium $13.99</li>
+          <li>Large $16.99</li>
+          <li>Extra Large $19.99</li>
+        </ul>
+      <form>
+        <select id="pizzaSize">
+          <option value="9.99">Small</option>
+          <option value="13.99">Medium</option>
+          <option value="16.99">Large</option>
+          <option value="19.99">Extra Large</option>
+        </select>
+      </form>
+      <br>
+      <h3>Select your toppings</h3>
+      <p> $1.99 each </p>
+      <form>
+        <label>
+          <input type="checkbox" name="topping" value="kelp">
+            Kelp
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="topping" value="pepperoni">
+            Pepperoni
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="topping" value="Krabby patty">
+            krabby patty
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="topping" value="peppers">
+            Peppers
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="topping" value="onion">
+            Onion
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="topping" value="bacon">
+            Bacon
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="topping" value="sausage">
+            Sausage
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="topping" value="extraCheese">
+            Extra Cheese
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="topping" value="pineapple">
+            Pineapple
+        </label>
+      </form>
+      <br>
+      <button type="button" class="btn btn-primary">Submit Order</button>
+      <br>
+      <div class="receipt"> </div>
+
+    </div>
+  </body>
+</html>
