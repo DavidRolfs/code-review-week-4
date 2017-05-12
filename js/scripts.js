@@ -45,7 +45,7 @@ $(document).ready(function(){
   var pizza = new Pizza(pizzaSize, toppings, finalTotal, drink);
   $("#showing").hide();
 
-  $("#receipt").append(pizza.fullOrder())
+  $("#receipt").append(pizza.fullOrder()).show();
 
   });
 })
