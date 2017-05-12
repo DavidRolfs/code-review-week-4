@@ -1,6 +1,8 @@
-function Pizza(size, topping, cost){
+//back-end
+function Pizza(size, topping, cost, drink){
   this.size = size;
   this.topping = topping;
+  this.drink = drink;
   this.cost = cost;
 };
 
@@ -8,7 +10,6 @@ Pizza.prototype.fullOrder= function() {
   return this.size + " pizza with " + this.topping + "<br>" + "Your total is $" + this.cost;
 
 }
-
 
 function pizzaCost(toppingTotal, sizeTotal){
   var toppingCost = toppingTotal.length * 1.99;
@@ -27,11 +28,6 @@ function pizzaCost(toppingTotal, sizeTotal){
   return (toppingCost + sizeCost).toFixed(2);
 };
 
-
-
-
-
-
 // front end
 
 $(document).ready(function(){
@@ -46,7 +42,7 @@ $(document).ready(function(){
 
   var pizza = new Pizza(pizzaSize, toppings, finalTotal);
 
-  $(".receipt").append(pizza.fullOrder())
+  $("#receipt").append(pizza.fullOrder())
 
   });
 })
