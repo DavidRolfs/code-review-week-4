@@ -3,6 +3,9 @@
   src: url('/Users/davidrolfs/desktop/code-review-week-4/krabby_patty/Krabby Patty.ttf');
   font-weight:400;
 }
+audio{
+  margin-left: 450px;
+}
 
 body{
   background-color: yellow;
