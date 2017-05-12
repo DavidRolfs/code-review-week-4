@@ -9,7 +9,7 @@ function Pizza(size, topping, cost, drink){
 Pizza.prototype.fullOrder= function() {
   return this.size + " pizza with " + this.topping + "<br>" + "Your total is $" + this.cost;
 
-}
+};
 
 function pizzaCost(toppingTotal, sizeTotal, drinkTotal){
   var toppingCost = toppingTotal.length * 1.99;
