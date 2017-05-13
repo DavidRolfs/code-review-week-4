@@ -11,40 +11,23 @@ Pizza.prototype.fullOrder= function() {
 
 };
 
-Pizza.prototype.pizzaCost = function(toppingTotal, sizeTotal, drinkTotal){
-  var toppingCost = toppingTotal.length * 1.99;
-    if(sizeTotal === "Small"){
+Pizza.prototype.pizzaCost = function(){
+  var toppingCost = this.topping.length * 1.99;
+    if(this.size === "Small"){
       var sizeCost = 9.99;
     }
-    else if(sizeTotal === "Medium"){
+    else if(this.size === "Medium"){
       var sizeCost = 13.99;
     }
-    else if(sizeTotal === "Large"){
+    else if(this.size === "Large"){
       var sizeCost = 16.99;
     }
-    else if(sizeTotal === "Extra Large"){
+    else if(this.size === "Extra Large"){
       var sizeCost = 19.99;
     }
-    return this.cost = (toppingCost + sizeCost + drinkTotal).toFixed(2);
+    return this.cost = (toppingCost + sizeCost + this.drink).toFixed(2);
   };
 
-
-// function pizzaCost(toppingTotal, sizeTotal, drinkTotal){
-//   var toppingCost = toppingTotal.length * 1.99;
-//   if(sizeTotal === "Small"){
-//     var sizeCost = 9.99;
-//   }
-//   else if(sizeTotal === "Medium"){
-//     var sizeCost = 13.99;
-//   }
-//   else if(sizeTotal === "Large"){
-//     var sizeCost = 16.99;
-//   }
-//   else if(sizeTotal === "Extra Large"){
-//     var sizeCost = 19.99;
-//   }
-//   return (toppingCost + sizeCost + drinkTotal).toFixed(2);
-// };
 
 // front end
 
@@ -60,7 +43,7 @@ $(document).ready(function(){
   var drink = parseInt($("#drink").val());
   var pizza = new Pizza(pizzaSize, toppings, drink);
 
-  var finalTotal = pizza.pizzaCost(toppings, pizzaSize, drink)
+  var finalTotal = pizza.pizzaCost()
 
   $("#showing").hide();
 
